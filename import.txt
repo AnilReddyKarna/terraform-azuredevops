@@ -1,0 +1,11 @@
+terraform import <RESOURCE_TYPE>.<NAME> <RESOURCE_ID>
+
+terraform import azurerm_resource_group.rg-devops /subscriptions/a57afe33-ba54-424b-aea5-dfc12f714d2d/resourceGroups/devops-rg
+
+terraform import azurerm_virtual_network.vnet-devops /subscriptions/a57afe33-ba54-424b-aea5-dfc12f714d2d/resourceGroups/devops-rg/providers/Microsoft.Network/virtualNetworks/devops-vnet1
+
+terraform import azurerm_subnet.subnet_devops /subscriptions/a57afe33-ba54-424b-aea5-dfc12f714d2d/resourceGroups/devops-rg/providers/Microsoft.Network/virtualNetworks/devops-vnet1/subnets/devops-subnet1
+
+terraform import azurerm_network_interface.nic /subscriptions/a57afe33-ba54-424b-aea5-dfc12f714d2d/resourceGroups/devops-rg/providers/Microsoft.Network/networkInterfaces/devops-nic
+
+terraform import azurerm_virtual_machine.vm /subscriptions/a57afe33-ba54-424b-aea5-dfc12f714d2d/resourceGroups/devops-rg/providers/Microsoft.Compute/virtualMachines/devops-vm
